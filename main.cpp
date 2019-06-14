@@ -88,9 +88,9 @@ int main(int argc, char* argv[]) {
 
 	if (argc >= 2) {
 		int b = atoi(argv[1]);
-		if (b == 0) b = 64;
+		if (b == 0) b = 128;
 		FMOD_System_SetDSPBufferSize(fmodSystem, b, 2);
-	} else FMOD_System_SetDSPBufferSize(fmodSystem, 64, 2);
+	} else FMOD_System_SetDSPBufferSize(fmodSystem, 128, 2);
 
 	FMOD_System_SetOutput(fmodSystem, FMOD_OUTPUTTYPE_ASIO);
 	int driverId, driverNums;
