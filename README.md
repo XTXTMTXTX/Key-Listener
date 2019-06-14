@@ -36,3 +36,5 @@ Run Key_Listener.exe, select asio4all and then open the asio4all control panel, 
 Restart Key_Listener.exe and press keys  
 
 If you don't hear anything, check the asio4all control panel and set a larger Buffer Size  
+
+\* You may need to change your game audio's offset to -60ms and close effect sounds
