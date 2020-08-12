@@ -1,1 +1,1 @@
-g++ main.cpp -o Key_Listener.exe -m32 -Wall -O2 -L fmod/lib/ -static-libgcc -lfmod -lfmodL
+g++ main.cpp -o Key_Listener.exe -m32 -Wall -s -std=c++1y -O2 -L fmod/lib/ -static-libgcc -lfmod -lfmodL

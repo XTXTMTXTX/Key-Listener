@@ -35,10 +35,12 @@ inline void Sound_Key(const int &key) {
 	if(!UseKeys[key])return;
 	if(Key_Enabled[key])FMOD_System_PlaySound(fmodSystem, KeySound[key], 0, false, 0);else
 	if(Key_Enabled[0])FMOD_System_PlaySound(fmodSystem, KeySound[0], 0, false, 0);
+	FMOD_System_Update(fmodSystem);
 }
 inline void Sound_Mouse(const int &key) {
 	if(Mouse_Enabled[key])FMOD_System_PlaySound(fmodSystem, MouseSound[key], 0, false, 0);else
 	if(Mouse_Enabled[0])FMOD_System_PlaySound(fmodSystem, MouseSound[0], 0, false, 0);
+	FMOD_System_Update(fmodSystem);
 }
 
 BOOL CALLBACK con_handler(DWORD) {
